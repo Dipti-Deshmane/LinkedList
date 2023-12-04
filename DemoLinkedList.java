@@ -1,23 +1,22 @@
 public class DemoLinkedList {
     Node head;
     Node tail;
-    public void append(int data) {
-        Node newNode = new Node(data);
-        if (head == null) {
-            head = tail=newNode;
-            }
-        else {
-            tail.next=newNode;
-            tail=newNode;
-        }
-    }
 
-    void Display(){
-       Node newNode = head ;
-        while (newNode!=null){
+public void add(int data) {
+    Node newNode = new Node(data);
+    newNode.next = head;
+    head = newNode;
+}
+
+    void Display() {
+        Node newNode = head;
+        while (newNode != null) {
             System.out.println(newNode.data);
-            newNode =newNode.next;
+            newNode = newNode.next;
         }
 
-    }
-    }
+    }}
+
+
+
+

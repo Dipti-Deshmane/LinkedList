@@ -3,10 +3,8 @@ public class Node {
     Node next;
 
     Node(int data){
-this.data=data;
+        this.data=data;
     }
-
-
 }
 
 
