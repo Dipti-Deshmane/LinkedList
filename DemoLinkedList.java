@@ -2,7 +2,7 @@ public class DemoLinkedList {
     Node head;
     Node tail;
 
-public void add(int data) {
+public void append(int data) {
     Node newNode = new Node(data);
     newNode.next = head;
     head = newNode;
