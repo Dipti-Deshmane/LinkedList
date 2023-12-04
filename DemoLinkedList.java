@@ -2,10 +2,19 @@ public class DemoLinkedList {
     Node head;
     Node tail;
 
-public void add(int data) {
+public void append(int data) {
     Node newNode = new Node(data);
-    newNode.next = head;
-    head = newNode;
+  if (head == null){
+      head = tail = newNode;
+  }
+  else{
+      Node temp=head;
+      while (temp.next!=null){
+
+          temp=temp.next;
+      }
+      temp.next=newNode;
+  }
 }
 
     void Display() {
