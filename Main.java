@@ -5,7 +5,7 @@ public class Main {
         Demo.append(56);
         Demo.append(70);
         Demo.append(30);
-        Demo.popFirst();
+        Demo.popLast(); 
 
         Demo.Display();
 
