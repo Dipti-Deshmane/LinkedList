@@ -21,6 +21,15 @@ public class DemoLinkedList {
       temp.next=newNode;
   }
 }
+    public void popFirst() {
+        if (head == null) {
+            return;
+        } else {
+            head = head.next;
+
+        }
+    }
+
 
     void Display() {
         Node newNode = head;

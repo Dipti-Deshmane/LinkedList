@@ -4,16 +4,10 @@ public class Main {
         DemoLinkedList Demo = new DemoLinkedList();
         Demo.append(56);
         Demo.append(70);
+        Demo.append(30);
+        Demo.popFirst();
 
-
-
-        Node temp = DemoLinkedList.head;
-        while (temp.data != 56) {
-            temp = temp.next;
-        }
-        Node newNode = new Node(30);
-        newNode.next = temp.next;
-        temp.next = newNode;
         Demo.Display();
+
     }
 }
